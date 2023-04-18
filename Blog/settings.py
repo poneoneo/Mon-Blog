@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "articles",
+
     "user_cust",
 ]
 
@@ -119,8 +120,9 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-STATICFILESDIRS = [
-    BASE_DIR / "static",
+
+STATICFILES_DIRS = [ 
+    BASE_DIR / "static/",
 ]
 
 # Media files upload (video, Images,docx)
