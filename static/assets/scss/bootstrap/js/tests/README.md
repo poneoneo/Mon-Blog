@@ -10,7 +10,6 @@ To run the unit test suite via [Karma](https://karma-runner.github.io/), run `np
 
 To run the unit test suite via a real web browser, open `index.html` in the browser.
 
-
 ## How do I add a new unit test?
 
 1. Locate and open the file dedicated to the plugin which you need to add tests to (`unit/<plugin-name>.js`).

@@ -13,6 +13,7 @@ class Blogger(models.Model):
     username = models.CharField(max_length = 150)
     password = models.CharField(max_length = 10)
     email = models.EmailField()
+    bio = models.CharField(max_length = 200, default = f"Hello Je m'appelle {username} et j'ecris des articles sur mon apprentissage du framework Django")
 
     def __str__(self):
         return self.username

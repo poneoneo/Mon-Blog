@@ -15,6 +15,7 @@ class Articles(models.Model):
     created_at = models.DateTimeField(auto_now=datetime.datetime.now)
     update_at = models.DateTimeField(auto_now_add=datetime.datetime.now)
     image = models.ImageField(upload_to = "article_images", blank = True)
+  
 
     def __str__(self):
         return self.title
