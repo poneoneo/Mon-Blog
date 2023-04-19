@@ -25,7 +25,7 @@ class Articles(models.Model):
     def save(self, *args, **kwargs):
         value = self.title
         self.slug = slugify(value=value, allow_unicode=True)
-        nb_articles += 1
+        self.nb_articles += 1
         super().save(*args, **kwargs)
 
     def get_absolute_url(self, *args, **kwargs):

@@ -1,13 +1,14 @@
 from django.contrib import admin
-from .models import CustomUser, Blogger 
+from .models import  Blogger 
 from django.contrib.auth.admin import UserAdmin
 
-class CustomUserAdmin(UserAdmin):
-    model = CustomUser
-    list_display = ("username", "email", "is_staff", "is_superuser", "first_name", "date_joined")
-    ordering = ["email"]
+class BloggerAdmin(admin.ModelAdmin):
+    model = Blogger
+    list_display = ("username", "email", "is_staff", "is_superuser", "date_joined")
+    ordering = ["username"]
+    verbose_name = "Blogger"    
 
-admin.site.register(CustomUser ,CustomUserAdmin)
-admin.site.register(Blogger)
+
+admin.site.register(Blogger, BloggerAdmin)
 
 

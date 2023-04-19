@@ -130,7 +130,7 @@ MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 #set default user model 
-AUTH_USER_MODEL = "user_cust.CustomUser"
+AUTH_USER_MODEL = "user_cust.Blogger"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

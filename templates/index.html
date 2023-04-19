@@ -24,7 +24,8 @@
 <body>
     
     <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Anthony's Blog</a></h1>
+	    {% block name_blogger %}
+		{% endblock name_blogger %}
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
            
@@ -44,9 +45,10 @@
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
 			        </ul><!--//social-list-->
-			        <hr> 
-				</div><!--//profile-section-->
+			        <hr> <!--//profile-section-->
+				</div>
 				
+				<!--onglets du blog-->
 				<ul class="navbar-nav flex-column text-left">
 					<li class="nav-item active">
 					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
